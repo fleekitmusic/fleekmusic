@@ -1,0 +1,531 @@
+body{
+  margin: 10px;
+  padding: 0;
+  background-color:#000033;
+}
+.nav-list-wrapper{
+  background-color: #003366;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+
+}
+li a:hover{
+  font-weight: bolder;
+}
+li a:active{
+  color:#003366;
+}
+.image_1{
+  border-radius:5px;
+
+}
+.song_name{
+  font-size: 14px;
+  color: white;
+}
+.link:hover{
+  font-weight: bolder;
+}
+.nav-list{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  overflow: hidden;
+}
+.nav-list-element{
+  float:left;
+}
+.nav-list-element a {
+  display:flex;
+  font-size:22px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  align-items: stretch;
+  justify-content: space-around;
+  text-decoration: none;
+  font-family:'Aref Ruqaa';
+}
+.nav-list-element:active{
+  background-color: #000033;
+  border-radius: 30px;
+}
+h1{
+  color: #cc6600;
+  text-shadow: 2px 2px 4px #000000;
+}
+/*.audio{
+  position:sticky;
+  bottom:0;
+  z-index: 1;
+}*/
+#Bd{
+  background-image: linear-gradient(180deg,red,yellow);
+}
+.Songs_container{
+  /*background-color: transparent;*/
+  background-color:#000033;
+  width: 100%;
+  background-attachment: fixed;
+
+  position: absolute;
+  /*bottom:0;*/
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+}
+.songs_list_container{
+  background-color:##000033;
+  width: 100%;
+  height: 250px;
+  position: absolute;
+
+}
+.Img_song:hover{
+  background-image: linear-gradient(180deg,red,yellow);
+}
+.songs{
+  border-radius: 5px;
+  list-style-type: none;
+  margin: 5px;
+  padding:20px;
+  text-align: center;
+  overflow:auto;
+  width: 160px;
+  height:;
+  background-color: #003366;
+  float: left;
+
+}
+.songs::after{
+  content: "";clear: both;
+  display: table;
+
+}
+.Img_song{
+  float:left;
+
+}
+/*#search_box{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display:block;
+}
+*/
+.form_container{
+  background-color: #003333;
+  width: 320px;
+  position: fixed;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  bottom: -400px;
+  right: 0;
+  transition: .5s;
+  text-align: center;
+}
+.form_container:hover{
+  bottom: 0;
+}
+.form_elements_container{
+  background-color: #000000;
+  padding: 2px;
+  margin-bottom: 2px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border-tbottom-right-radius: 10px;
+}
+
+.Queries_elements{
+  color:#009900;
+  font-size: 15px;
+
+}
+.Query_inputs{
+  width: 100%;
+  overflow: scroll;
+  border-radius: 3px;
+}
+.Query_header{
+  color: white;font-size: 12px;
+}
+.background_image1{
+  background-attachment: fixed;
+}
+#submit1{
+  color:#0099ff;
+  background-color: #6666ff;
+
+
+}
+.image_1{
+  background-attachment: fixed;
+
+}
+.image_container{
+  height: 500px;
+}
+.slideshow_container{
+/*  height: 850px;*/
+
+}
+
+/*Vaibhav's update*/
+.favourites
+{
+	width : 1510px;
+	height : 680px;
+}
+#column1
+{
+	width : 755px;
+	height : 680px;
+	background-color : #000033;
+	float : left;
+}
+#column2
+{
+	width : 755px;
+    height : 680px;
+	background-color : #000033;
+	float : left;
+}
+#photo
+{
+	margin-left : 200px;
+	margin-top : 50px;
+}
+#playlist
+{
+	margin-top : 60px;
+	margin-left : 275px;
+}
+#video
+{
+	width : 675px;
+	height : 110px;
+	background-color : #C4C4C4;;
+	margin-left : 35px;
+	margin-top : 40px;
+	border-radius : 35px;
+}
+.videos
+{
+    width : 680px;
+	height : 70px;
+	background: linear-gradient(to right, #5D6D7E, #566573);
+	border-radius : 25px;
+	margin-left : 35px;
+	margin-top : 23px;
+}
+#button
+{
+	color : white;
+	background-color : lightgreen;
+	border-color : lightgreen;
+	font-size : 38px;
+	width : 220px;
+	height : 70px;
+}
+#button:hover
+{
+	background-color : purple;
+	color : orange;
+}
+#button:active
+{
+	background-color : blue;
+	color : khaki;
+}
+#video .fas
+{
+	float : right;
+    font-size : 40px;
+	color : gold;
+	margin-top : 30px;
+	margin-right : 20px;
+}
+.videos .fas
+{
+	float : right;
+	color : gold;
+	font-size : 30px;
+	margin-top : 15px;
+	margin-right : 15px;
+}	
+#video .fa
+{
+	font-size : 45px;
+	float : left;
+	margin-left : 20px;
+	margin-top : 20px;
+}
+#range
+{
+	width : 250px;
+    margin-left : 60px;
+	margin-top : 40px;	
+}
+#fav-nav{
+  width: 1510px;
+  background-color: #003366;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+#arrow
+{
+	margin-left : 10px;
+	float : left;
+}
+.songs .far
+{
+	font-size:30px;
+	color:gold;
+}
+#about
+{
+	width : 1505px;
+	height : 1000px;
+	border-style : solid;
+	background-color : #000033;
+}
+#nav-about{
+  width: 1505px;
+}
+
+#about1
+{
+	width : 450px;
+	height : 600px;
+	border-style : solid;
+	margin-top : 50px;
+	margin-left : 25px;
+	background-color : #003366;border-radius: 20px;
+
+}
+#about2
+{
+	width : 450px;
+	height : 600px;
+	border-style : solid;
+	position : relative;
+	left : 525px;
+	bottom : 600px;
+	background-color : #003366;border-radius: 20px;
+}
+#about3
+{
+	width : 450px;
+	height : 600px;
+	border-style : solid;
+	position : relative;
+	left : 1025px;
+	bottom : 1210px;
+	background-color : #003366;border-radius: 20px;
+}
+#about4
+{
+	width : 100px;
+	height : 300px;
+	position : relative;
+	bottom : 1170px;
+}
+#about5
+{
+	width : 1250px;
+	height : 125px;
+	margin-left : 30px;
+	position : relative;
+	left : 150px;
+	bottom : 1350px;
+	background-color : #003366;
+  border-radius: 20px;
+}
+#about6
+{
+	width : 1505px;
+	height : 30px;
+	background-color :#003366;
+	position : relative;
+	left : 0;
+	bottom : 1350px;
+  text-align: center;
+}
+.profile_photo{
+  width : 180px;
+	height : 180px;
+	/*border-radius : 50%;*/
+
+}
+#photo1{
+  margin-left: 120px;
+  margin-top: 25px;
+}
+#photo2{
+  margin-left : 120px;
+	margin-top : 25px;
+}
+#photo3{
+  margin-left : 120px;
+  margin-top : 25px;
+}
+#circle2
+{
+	width : 165px;
+	height : 165px;
+	border-radius : 50%;
+	background-color : red;
+	margin-left : 140px;
+	margin-top : 25px;
+}
+#circle3
+{
+	width : 165px;
+	height : 165px;
+	border-radius : 50%;
+	background-color : red;
+	margin-left : 260px;
+	margin-top : 25px;
+}
+.name
+{
+	width : 275px;
+	height : 75px;
+	border-style : ridge;
+	border-radius : 30px;
+	margin-left : 75px;
+	margin-top : 50px;
+	background-color : #000033;
+}
+.box
+{
+	width : 400px;
+	height : 200px;
+	border-style : ridge;
+	border-radius : 35px;
+	margin-left : 25px;
+	margin-top : 50px;
+	background-color : #000033;
+}
+#about4 a
+{
+	display : block;
+    text-align : center;
+    padding : 16px;
+    transition : all 0.3s ease;
+    color : white;
+    font-size : 50px;
+}
+#instagram
+{
+    background-color : #dd4b39;
+}
+#linkedin
+{
+	background-color : #007bb5;
+}
+#whatsapp
+{
+	background-color : #00b489;
+}
+#about4 a:hover
+{
+  background-color: #000;
+}
+.vtv
+{
+	font-size : 43px;
+	position : relative;
+  text-align: center;
+	bottom : 30px;
+    left : 5px;
+}
+.vv{
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+.list
+{
+	font-size : 25px;
+	color : white;
+}
+.main {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.title {
+ font-size: 42px;
+}
+
+
+.image {
+  height: 100px;
+  width: 100px;
+  font-size: 25px;
+  background: blue;
+  margin: 10px;
+  display: inline-block;
+  line-height: 100px;
+}
+
+
+.image-container {
+  vertical-align: middle;
+  display: inline-block;
+  white-space: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  width: 50%;
+}
+
+.prev, .next {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100%;
+  cursor: pointer;
+  color: black;
+  transition: 0.6s ease;
+}
+
+.next {
+  margin-left: 5px;
+}
+
+.prev {
+  margin-right: 5px;
+}
+
+.prev:hover, .next:hover {
+  color: white;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+}
+
+.query {
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  
+  padding: 16px 32px;
+  text-align: center;
+  font-size: 10px;
+
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.query:hover {opacity: 1}

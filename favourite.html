@@ -1,0 +1,136 @@
+<html>
+<head>
+<title> favourites </title>
+<link href='https://fonts.googleapis.com/css?family=Aref Ruqaa' rel='stylesheet'>
+<link rel = "stylesheet" href = "css_2.css">
+<script src = "https://kit.fontawesome.com/6da14c11b0.js" crossorigin = "anonymous"></script>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+function star(recevingStarInfo){
+  $(this).hasClass("fas")?"": recevingStarInfo.classList.toggle("fas")
+  $(this).hasClass("far")?"": recevingStarInfo.classList.toggle("far")
+}
+function myfun(x){
+  x.classList.toggle("fa-pause-circle-o")
+}
+</script>
+<style>
+#video .far
+{
+  float : right;
+  font-size : 40px;
+  color : gold;
+  margin-top : 30px;
+  margin-right : 20px;
+}
+.videos .far
+{
+  float : right;
+  font-size : 30px;
+  color : gold;
+  margin-top : 15px;
+  margin-right : 15px;
+}
+.music
+{
+  float : left;
+  margin-top : 15px;
+}
+.vimage
+{
+  margin-top : 5px;
+  margin-left : 20px;
+  margin-right : 60px;
+  float : left;
+}
+.vbutton
+{
+  width : 300px;
+  height : 40px;
+  background-color : #003366;
+  border-color : #003366;
+  border-radius: 5px;
+  
+}
+.vbutton:hover
+{
+  background-color : #FF8A65;
+  border-radius: 5px;
+}
+#last
+{
+  width : 1510px;
+  height : 30px;
+  background-color : #003366;
+  text-align : center;
+}
+</style>
+</head>
+<body>
+<div id = "fav-nav">
+<nav>
+<ul class = "nav-list">
+<li class = "nav-list-element"><a href = "Home.html">Home</a></li>
+
+<li class = "nav-list-element"><a href = "favourite.html">Favorites</a></li>
+<li class = "nav-list-element"><a href = "aboutus.html">About Us</a></li>
+</ul>
+</nav>
+</div>
+<div class = "favourites">
+<div id = "column1">
+<div id = "photo">
+<img src = "star.jpg" width = "325" height = "285">
+</div>
+<div id = "playlist">
+<input type="button" id = "button" value = "view playlist">
+</div>
+<div id = "video">
+<i class = "fa fa-step-backward"> </i> <i onclick = "myfun(this)" class = "fa fa-play-circle-o"> </i> <i class = "fa fa-step-forward"> </i>
+<input type = "range" min = "0" max = "100" value = "0" id = "range"> 
+<i onclick = "star(this)" class = "fas fa-star"></i>
+</div> 
+</div>
+<div id = "column2">
+<div class = "videos">
+<img class = "vimage" src = "song_site/image/Ksingh.jpg" width = "100px" height = "60px"> 
+<a class = "music" href = "album01.html"> <input type = "button" value = "Kabir Singh" class = "vbutton"> </a> 
+<i onclick = "star(this)" class = "fas fa-star"></i>
+</div>
+<div class = "videos">
+<img class = "vimage" src = "song_site/image/bees.jpg" width = "100px" height = "60px">
+<a class = "music" href = "album04.html"> <input type="button" value = "Trending Meme Hit Songs" class = "vbutton"> </a> 
+<i onclick = "star(this)" class = "fas fa-star"></i>
+</div>
+<div class = "videos">
+<img class = "vimage" src = "song_site/image/FireTheme.jpg" width = "100px" height = "60px">
+<a class = "music" href = "album03.html"> <input type = "button" value = "Trending Anime Hit Songs" class = "vbutton"> </a>
+<i onclick = "star(this)" class = "fas fa-star"></i>
+</div>
+<div class = "videos">
+<img class = "vimage" src = "song_site/image/kan-dia.jpg" width = "100px" height = "60px">
+<a class = "music" href = "album05.html"> <input type = "button" value = "Kannada Top Hit Songs" class = "vbutton"> </a> 
+<i onclick = "star(this)" class = "fas fa-star"></i>
+</div>
+<div class = "videos">
+<img class = "vimage" src = "song_site/image/chaar-botal.jpg" width = "100px" height = "60px">
+<a class = "music" href = "album07.html"> <input type = "button" value = "Yo Yo Honey Singh Hit Songs" class = "vbutton"> </a>  
+<i onclick = "star(this)" class = "fas fa-star"></i>
+</div>
+<div class = "videos">
+<img class = "vimage" src = "song_site/image/kan-nana-mele.jpg" width = "100px" height = "60px">
+<a class = "music" href = "album06.html"> <input type = "button" value = "Top Trending Hit Songs" class = "vbutton"> </a> 
+<i onclick = "star(this)" class = "fas fa-star"></i>
+</div>
+<div class = "videos">
+<img class = "vimage" src = "song_site/image/Sher.jpg" width = "100px" height = "60px">
+<a class = "music" href = "album02.html"> <input type = "button" value = "Shershaah" class = "vbutton"> </a>
+<i onclick = "star(this)" class = "fas fa-star"></i>
+</div>
+</div>
+</div>
+<div id = "last">
+<h1 style = "color : white;font-size : 25px"> Thank you for visiting our website. Enjoy music without ads in between by just with fleek. &copy </h1>
+</div>
+</body>
+</html>
